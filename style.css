@@ -1,0 +1,99 @@
+/*ORDEN PARA IR TRABAJANDO
+1-Posicionamiento --> static, absolute, relative, fixed
+2-Modelo de caja (Box model) --> margin, border, padding, content
+3-Tipografía --> tipos, tamaños de fuente, etc
+4-Estilos visuales --> box-shadow, border-radius, gradient, etc
+5-Otros --> reglas CSS y más
+*/
+
+:root {
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 32rem;
+  height: 33.4rem;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+header img {
+  width: 15rem;
+  height: 2.4rem;
+  margin-top: 6rem;
+  align-self: center;
+}
+
+.header-tittle-container {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  height: 21.8rem;
+  margin-top: 4rem;
+  text-align: center;
+  align-self: center;
+}
+
+.header-tittle-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--just-white);
+}
+
+.header-tittle-container p {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+
+.header-button {
+  position: absolute;
+  left: calc(50% - 11.8rem);
+  top: 27rem;
+  display: block;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  width: 22.9rem;
+  height: 4.8rem;
+  background-color: var(--off-white);
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.header-button span {
+  display: inline-block;
+  width: 1.3rem;
+  height: 8px;
+  margin-left: 1rem;
+  background-image: url("assets/icons/down-arrow.svg");
+}
